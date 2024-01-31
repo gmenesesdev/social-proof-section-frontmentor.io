@@ -42,10 +42,14 @@ body {
   background-size: contain;
 }
 
-.container-section-1,
+.container-section-1 {
+  max-width: 550px;
+  margin: 2.8rem 2rem 2rem 2rem;
+}
+
 .container-section-2 {
   max-width: 550px;
-  margin: auto;
+  margin: auto 2rem;
 }
 
 h1 {
@@ -98,19 +102,20 @@ h1 {
   background-image: url("images/bg-pattern-bottom-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
+  margin-bottom: 5rem;
 }
 
 .review {
   background-color: var(--very-dark-magenta);
   color: var(--white);
-  padding: 1rem;
+  padding: 1.8rem;
   margin-bottom: 1rem;
   border-radius: 0.5rem;
 }
 
 .review-description {
   text-align: left;
-  margin: 1rem;
+  margin: 1rem auto auto auto;
   
 }
 
@@ -132,12 +137,14 @@ h1 {
 .review-title-buyer {
   grid-area: buyer;
   align-self: start;
+  color: var(--softpink);
 }
 
 .review-title {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: auto;
+  column-gap: 1.2rem;
   grid-template-areas: 
     "imagen name"
     "imagen buyer";
