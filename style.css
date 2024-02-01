@@ -27,7 +27,7 @@ body {
   font-family: "League Spartan", sans-serif;
   font-size: 15px;
   margin: 0 auto;
-  height: 100%;
+  height: 100dvh;
   width: auto;
 }
 
@@ -162,14 +162,15 @@ h1 {
 /* Desktop */
 
 @media (min-width: 900px) {
+
   .section-1 {
-    background-image: url("images/bg-pattern-top-desktop.svg");
+    background-image: url("images/bg-pattern-top-desktop.svg") left top no-repeat;
   }
 
   .container-section-1,
   .container-section-2 {
     max-width: max-content;
-    margin: 2rem 5rem;
+    margin: 2rem 10rem;
   }
 
   h1 {
@@ -179,11 +180,12 @@ h1 {
 
   .container-section-1 {
     display: grid;
-    grid-template-columns: 3fr 3fr;
-    column-gap: 3rem;
+    grid-template-columns: 2fr 4fr;
+    column-gap: 2rem;
     text-align: left;
     align-items: center;
     justify-items: center;
+    margin-top: 3rem;
   }
 
   .description {
@@ -228,5 +230,31 @@ h1 {
     margin: 0;
     padding: 0;
     text-align: center;
+  }
+
+  .section-2 {
+    margin: 0;
+    background-image: url('images/bg-pattern-bottom-desktop.svg') bottom right no-repeat;
+    background-size: cover;
+  }
+
+  .container-section-2 {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+  }
+
+  .review {
+    margin: 0;
+  }
+
+  .review:nth-child(1){
+    margin-top: -1rem;
+    margin-bottom: 1rem; 
+  }
+
+  .review:nth-child(3){
+    margin-top: 1rem;
+    margin-bottom: -1rem; 
   }
 }
